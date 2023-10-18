@@ -1,0 +1,85 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.content {
+    height: 200vh;
+}
+
+
+.menu-center {
+    display: flex;
+
+}
+
+.menu-item {
+    padding: 0 20px;
+    cursor: pointer;
+
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.shop-item {
+    position: relative;
+}
+
+.shop-item:hover .hidden {
+    display: block;
+
+}
+
+.btn-login {
+    cursor: pointer;
+}
+
+.card-collection-col {
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.card-collection-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 1px solid #00000057;
+}
+
+.card-collection-col-prop {
+    padding: 10px;
+    height: 100%;
+}
+
+.card-collection-col:hover .card-collection-col-prop {
+    transition: .3s;
+    padding: 0;
+    margin-top: 10px;
+    height: 530px;
+    transform: translateY(-30px);
+}
+
+/* responsive for card collection */
+@media only screen and (min-width: 100px) and (max-width: 512px) {
+    .card-collection-col:hover .card-collection-col-prop {
+        padding: 10px;
+        height: 100%;
+        margin-top: 0;
+        transform: translateY(0px);
+    }
+
+}
+
+/* end responsive */
+
+.card-btn{
+    opacity: 0;
+}
+.container-card:hover .card-btn{
+    opacity: 1;
+    transition: .3s;
+    
+}
